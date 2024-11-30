@@ -1,8 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 section {
     display: flex;
     justify-content: center;
@@ -14,6 +15,7 @@ section {
     background-position: center;
     background-size: cover;
 }
+
 .form-box {
     position: relative;
     width: 400px;
@@ -23,116 +25,135 @@ section {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    border: 2px solid rgb(255, 255, 255,0.5);
+    border: 2px solid rgb(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(10px);
     -moz-backdrop-filter: blur(10px);
     -o-backdrop-filter: blur(10px);
     -ms-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 }
+
 h5 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 2em;
-    color: aliceblue;
+    color: black;
     text-align: center;
 }
-.inputbox{
+
+.inputbox {
     position: relative;
     margin: 30px 0;
     width: 310px;
     border-bottom: 2px solid aliceblue;
 }
+
 i {
-    color: aliceblue;
+    color: #222;
     position: absolute;
     right: 8px;
     font-size: 1.2em;
     top: 20px;
 }
-.inputbox label{
+
+.inputbox label {
     position: absolute;
     top: 50%;
     left: 5px;
     transform: translatey(-50%);
-    color: aliceblue;
+    color: #222;
     font-size: 1em;
     pointer-events: none;
     transition: .5s;
 }
-input:focus ~ label,
-input:valid ~ label{
-top: 5px;
+
+input:focus~label,
+input:valid~label {
+    top: 5px;
 }
-.inputbox input{
-width: 100%;
-height: 50px;
-background-color: transparent;
-border: none;
-outline: none;
-font-size: 1em;
-padding:0 35px 0 5px;
-color: aliceblue;
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: aliceblue;
 }
+
 .remember {
     margin: -15px 0 15px;
     font-size: .9em;
-    color: aliceblue;
+    color: #222;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.remember label input{
+
+.remember label input {
     margin-right: 3px;
 }
-.remember label a{
+
+.remember label a {
     color: aliceblue;
     text-decoration: none;
 }
-.remember p a:hover{
-text-decoration: underline;
+
+.remember p a:hover {
+    text-decoration: underline;
 }
+
 button {
     width: 100%;
     height: 40px;
     border-radius: 20px;
     background-color: aliceblue;
     border: none;
-   cursor: pointer;
-   font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
 }
-.register{
+
+.register {
     color: #222;
     text-align: center;
     margin: 25px 0 10px;
 }
-.register p a{
+
+.register p a {
     text-decoration: none;
     color: #222;
 }
-.register p a:hover{
-text-decoration: underline;
+
+.register p a:hover {
+    text-decoration: underline;
 }
+
 .button {
     width: 100%;
     height: 40px;
     border-radius: 20px;
     background-color: aliceblue;
     border: none;
-   cursor: pointer;
-   padding: 8px;
+    cursor: pointer;
+    padding: 8px;
 }
-.laziz{
+
+.laziz {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100px;
 }
+
 ul {
     list-style: none;
 }
+
 a {
     text-decoration: none;
 }
+
 #navbar {
     display: flex;
     justify-content: space-between;
@@ -141,22 +162,27 @@ a {
     align-items: center;
     margin: 0%;
 }
+
 #navbar ul {
     display: flex;
     margin-right: 100px;
 }
+
 #navbar ul li a {
     padding: 15px 20px;
     color: black;
     font-weight: 600px;
 }
-#navbar ul li a:hover{
+
+#navbar ul li a:hover {
     border-bottom: 2px solid #1877f2;
 }
+
 .peoc img {
     display: flex;
     align-items: center;
 }
+
 h5 {
     bottom: -5px;
 }

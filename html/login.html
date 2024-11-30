@@ -19,13 +19,66 @@
     />
     <link rel="stylesheet" href="/assets/css/login.css" />
     <title>Login</title>
+    <link rel="stylesheet" href="../assets/css/maicons.css" />
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.css" />
+
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/owl-carousel/css/owl.carousel.css"
+    />
+
+    <link rel="stylesheet" href="../assets/vendor/animate/animate.css" />
+
+    <link rel="stylesheet" href="../assets/css/theme.css" />
   </head>
   <body>
-    <header>
-      <div id="navbar">
-        <img src="my logo/laziz logo.png" alt="laziz" width="100px" />
-        <nav>
-          <ul>
+    <div class="col">
+    <!-- Back to top button -->
+  <div class="back-to-top"></div>
+
+  <header>
+    <div class="topbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 text-sm">
+            <div class="site-info">
+              <a href="#"><span class="mai-call text-primary"></span> +00 123 4455 6666</a>
+              <span class="divider">|</span>
+              <a href="#"><span class="mai-mail text-primary"></span> mail@example.com</a>
+            </div>
+          </div>
+          <div class="col-sm-4 text-right text-sm">
+            <div class="social-mini-button">
+              <a href="#"><span class="mai-logo-facebook-f"></span></a>
+              <a href="#"><span class="mai-logo-twitter"></span></a>
+              <a href="#"><span class="mai-logo-dribbble"></span></a>
+              <a href="#"><span class="mai-logo-instagram"></span></a>
+            </div>
+          </div>
+        </div> <!-- .row -->
+      </div> <!-- .container -->
+    </div> <!-- .topbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#"><span class="text-primary">One</span>-Health</a>
+
+        <form action="#">
+          <div class="input-group input-navbar">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="icon-addon1"><span class="mai-search"></span></span>
+            </div>
+            <input type="text" class="form-control" placeholder="Enter keyword.." aria-label="Username" aria-describedby="icon-addon1">
+          </div>
+        </form>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupport">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
@@ -42,30 +95,25 @@
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-primary ml-lg-3" href="My place login.html"
-                >Login / Register</a
-              >
+              <a class="btn btn-primary ml-lg-3" href="register.html">Login / Register</a>
             </li>
           </ul>
-        </nav>
-      </div>
-    </header>
+        </div> <!-- .navbar-collapse -->
+      </div> <!-- .container -->
+    </nav>
+  </header>
+  <!--header ends-->
     <br />
+    <form action="" method="post">
     <section>
       <div class="form-box">
         <div class="form-value">
-          <form action="">
-            <input
-              type="image"
-              src="my logo/My Place logo.png"
-              class="laziz"
-              alt=""
-            />
+          <form action="" method="post">
             <h5>Please Login</h5>
             <div class="inputbox">
-              <i class="fa-solid fa-envelope"></i>
-              <input type="email" placeholder="Email" required id="email" />
-              <label for="email">Email</label>
+              <i class="fa-solid fa-user"></i>
+              <input type="text" placeholder="Enter Username" required id="username" />
+              <label for="username">Enter Username:</label>
             </div>
             <div class="inputbox">
               <i class="fa-solid fa-lock"></i>
@@ -78,12 +126,10 @@
               <label for="password">Password</label>
             </div>
             <div class="remember">
-              <label for="checkbox"
-                ><input type="checkbox" id="checkbox" />Remember Me</label
-              >
+              <label for="checkbox"><input type="checkbox" id="checkbox"/>Remember Me</label>
               <a href="#">Forgot Password</a>
             </div>
-            <button value="">Log in</button>
+            <button value="" id="Login">Log in</button>
             <br />
             <br />
             <br />
@@ -94,6 +140,75 @@
         </div>
       </div>
     </section>
+  </form>
+  <!--footer start-->
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row px-md-3">
+        <div class="col-sm-6 col-lg-3 py-3">
+          <h5>Company</h5>
+          <ul class="footer-menu">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Editorial Team</a></li>
+            <li><a href="#">Protection</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3 py-3">
+          <h5>More</h5>
+          <ul class="footer-menu">
+            <li><a href="#">Terms & Condition</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="#">Join as Doctors</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3 py-3">
+          <h5>Our partner</h5>
+          <ul class="footer-menu">
+            <li><a href="#">One-Fitness</a></li>
+            <li><a href="#">One-Drugs</a></li>
+            <li><a href="#">One-Live</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-3 py-3">
+          <h5>Contact</h5>
+          <p class="footer-link mt-2">351 Willow Street Franklin, MA 02038</p>
+          <a href="#" class="footer-link">701-573-7582</a>
+          <a href="#" class="footer-link">healthcare@temporary.net</a>
+
+          <h5 class="mt-3">Social Media</h5>
+          <div class="footer-sosmed mt-3">
+            <a href="#" target="_blank"
+              ><span class="mai-logo-facebook-f"></span
+            ></a>
+            <a href="#" target="_blank"
+              ><span class="mai-logo-twitter"></span
+            ></a>
+            <a href="#" target="_blank"
+              ><span class="mai-logo-google-plus-g"></span
+            ></a>
+            <a href="#" target="_blank"
+              ><span class="mai-logo-instagram"></span
+            ></a>
+            <a href="#" target="_blank"
+              ><span class="mai-logo-linkedin"></span
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <p id="copyright">
+        Copyright &copy; 2020
+        <a href="https://macodeid.com/" target="_blank">MACode ID</a>. All
+        right reserved
+      </p>
+    </div>
+  </footer>
+<!--footer ends-->
+</div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -109,6 +224,8 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
-    <script src="login.js"></script>
+    <script src="/assets/js/login.js"></script>
+    <!--axios libaray-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </body>
 </html>
